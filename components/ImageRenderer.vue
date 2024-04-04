@@ -6,12 +6,12 @@
 </template>
 
 <script setup lang="ts">
+const _fmt = `color: lightcoral`;
 onMounted(() => {
-    console.log(`[ImageViewer] onMounted`);
+    console.log(`%c[ImageViewer] onMounted`, _fmt);
 });
-
 onUpdated(() => {
-    console.log(`[ImageViewer] onUpdated`);
+    console.log(`%c[ImageViewer] onUpdated`, _fmt);
 });
 
 const reqDate = useState<number>();

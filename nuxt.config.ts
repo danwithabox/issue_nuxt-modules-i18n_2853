@@ -42,3 +42,9 @@ export default defineNuxtConfig({
         },
     },
 })
+
+declare module "nuxt/schema" {
+    interface PublicRuntimeConfig {
+        PAGE_LOCALE_KEYING_INDEX: boolean,
+    }
+}
